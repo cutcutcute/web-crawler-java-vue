@@ -32,3 +32,37 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+#FRONTEND
+
+# Logs
+crawler-frontend/logs
+crawler-frontend/*.log
+crawler-frontend/npm-debug.log*
+crawler-frontend/yarn-debug.log*
+crawler-frontend/yarn-error.log*
+crawler-frontend/pnpm-debug.log*
+crawler-frontend/lerna-debug.log*
+
+crawler-frontend/node_modules
+crawler-frontend/.DS_Store
+crawler-frontend/dist
+crawler-frontend/dist-ssr
+crawler-frontend/coverage
+crawler-frontend/*.local
+
+crawler-frontend/cypress/videos/
+crawler-frontend/cypress/screenshots/
+
+# Editor directories and files
+crawler-frontend/.vscode/*
+crawler-frontend/!.vscode/extensions.json
+crawler-frontend/.idea
+crawler-frontend/*.suo
+crawler-frontend/*.ntvs*
+crawler-frontend/*.njsproj
+crawler-frontend/*.sln
+crawler-frontend/*.sw?
+
+crawler-frontend/*.tsbuildinfo
