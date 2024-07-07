@@ -20,6 +20,5 @@
         width: 100vw;
         position: relative;
         padding: 24px;
-        border: 1px solid black;
     }
 </style>
