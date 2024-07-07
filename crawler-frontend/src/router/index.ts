@@ -3,6 +3,8 @@ import RouterConsts from './routerConsts'
 import HomeView from "../views/HomeView.vue";
 import KeywordsView from "../views/KeywordsView.vue";
 import DataView from '@/views/DataView.vue';
+import ByLinkView from "@/views/ByLinkView.vue";
+import Settings from "@/views/Settings.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -25,6 +27,17 @@ const router = createRouter({
       path: "/data",
       name: "data",
       component: DataView
+    },
+
+    {
+      path: "/by-link",
+      name: "By Links",
+      component: ByLinkView
+    },
+    {
+      path: "/settings",
+      name: "Settigns",
+      component: Settings
     }
     //{
       //path: '/about',

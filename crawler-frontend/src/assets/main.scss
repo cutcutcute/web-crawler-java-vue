@@ -1,5 +1,6 @@
 @import './base.scss';
 @import "./mixins";
+@import "./parent";
 
 
 *{
@@ -9,11 +10,16 @@
 
 body{
   background-color: var(--color-background);
+  overflow-x: hidden;
 }
 
 
 .p-3{
   padding: 3px;
+}
+
+.active{
+  @extend %active-text;
 }
 
 

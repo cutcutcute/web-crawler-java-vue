@@ -14,9 +14,16 @@ const RouterConsts: NavigationElement[] = [
     {
         path:"/",
         name: "Главная",
-        title: "Link",
+        title: "Home",
         navClass:"home-nav",
         
+    },
+
+    {
+        path: "/by-link",
+        name: "По ссылке",
+        title: " ByLink",
+        navClass: "link-nav"
     },
 
     {

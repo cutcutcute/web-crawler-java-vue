@@ -11,7 +11,7 @@ defineProps<{
 </script>
 
 <template>
-    <RouterLink class="header-nav" :to="rout.path">
+    <RouterLink class="header-nav" :to="rout.path" exact-active-class="active">
         {{rout.name}}
     </RouterLink>
 
@@ -24,7 +24,7 @@ defineProps<{
 
     .header-nav{
         cursor: pointer;
-        font-size: 1.3rem;
+        @include fluid-text(22);
         @include reset-link;
 
         &:hover{
