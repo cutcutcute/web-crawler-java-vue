@@ -7,7 +7,7 @@
 </script>
 
 <template>
-    <header :class="{light: isLightTheme}">
+    <header :class="{light: isLightTheme}" class="p-3">
         <nav v-for="rout in RouterConsts">
             <HeaderButton :rout="rout" />
         </nav>    
@@ -16,9 +16,15 @@
 </template>
 
 <style scoped lang="scss">
+    
     header{
         height: 90px;
-        background-color:var(--vt-c-divider-dark-2)
+        background-color:var(--vt-c-divider-dark-2);
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        padding:10px;
 
     }
 

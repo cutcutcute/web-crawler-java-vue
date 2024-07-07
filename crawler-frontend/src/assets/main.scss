@@ -1,6 +1,19 @@
 @import './base.scss';
+@import "./mixins";
+
+
+*{
+  transition: all .2s ease;
+}
 
 
 body{
   background-color: var(--color-background);
 }
+
+
+.p-3{
+  padding: 3px;
+}
+
+

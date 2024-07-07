@@ -1,7 +1,9 @@
 
 
 <script setup lang="ts">
-import NavigationElement from "../router/routerConsts"
+import { RouterLink } from 'vue-router';
+/* __placeholder__ */
+import type { NavigationElement } from '@/router/routerConsts';
 defineProps<{
     rout: NavigationElement
 }>()
@@ -9,8 +11,24 @@ defineProps<{
 </script>
 
 <template>
-    <nav class="s" >
+    <RouterLink class="header-nav" :to="rout.path">
         {{rout.name}}
-    </nav>
+    </RouterLink>
 
 </template>
+
+<style scoped lang="scss">
+
+    @import "../assets/parent";
+    @import "../assets/mixins";
+
+    .header-nav{
+        cursor: pointer;
+        font-size: 1.3rem;
+        @include reset-link;
+
+        &:hover{
+            @extend %active-text;
+        }
+    }
+</style>
